@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS</title>
+    <style>
+        .primary-btn {
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            background-color: #3153e8;
+            transition: color ease-in-out .5s;
+        }
+        .primary-btn:hover {
+            background-color: #233fb8;
+
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Learning JavaScript with Oluwanifemi and Ayomiposi</h1>
+
+    <p class="big-paragraph">Welcome to our JavaScript learning journey!</p>
+    <p class="big-paragraph">Let's dive into the world of JavaScript together!</p>
+
+    <!-- Inline JS/Scripting -->
+    <button type="button" onclick="alert(`Welcome to today's class. Today is ${new Date().toDateString()}`)" disabled class="click">Click Me!</button>
+
+    <!-- Internal JS/Script -->
+    <script>
+        setInterval(() => {
+            const r = Math.floor(Math.random() * 255);
+            const g = Math.floor(Math.random() * 255);
+            const b = Math.floor(Math.random() * 255);
+            document.querySelector("h1").style.color = `rgb(${r}, ${g}, ${b})`;
+            
+        }, 2000)
+    </script>
+
+    <p id="knife">Oluwanifemi is a stubborn girl! <span id="hiya">hiya! hiya!! ooo!!!</span></p>
+
+
+
+    <section class="sect" id="sect">
+        
+    </section>
+
+    
+    <p id="new">This is a new element</p>
+
+    <input type="number" name="firstNumber" id="firstNumber" placeholder="Enter  a first number">
+    <select name="operator" id="operator">
+        <option value="add">add</option>
+        <option value="subtract">subtract</option>
+        <option value="multiply">multiply</option>
+        <option value="divide">divide</option>
+    </select>
+    <input type="number" name="secondNumber" id="secondNumber" placeholder="Enter  a second number">
+    <button type="button" id="calculate">Calculate</button>
+    
+
+    <!-- External JS/Script -->
+    <script src="./script.js"></script>
+
+</body>
+</html>
