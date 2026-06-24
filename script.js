@@ -1049,6 +1049,7 @@ console.log(newPara.style);
 // calculate logic
 const calBtn = document.querySelector("#calculate");
 
+// Calculate button
 calBtn.addEventListener("click", () => {
     const firstNumber = document.querySelector("#firstNumber");
     const secondNumber = document.querySelector("#secondNumber");
